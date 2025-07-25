@@ -1,0 +1,41 @@
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.Xml.Serialization;
+
+namespace RestVSoapDemo.Models
+{
+    [DataContract]
+    [XmlRoot("Product")]
+    public class Product
+    {
+        [DataMember]
+        [XmlElement("Id")]
+        public int Id { get; set; }
+
+        [DataMember]
+        [XmlElement("Name")]
+        public string Name { get; set; } = string.Empty;
+
+        [DataMember]
+        [XmlElement("Price")]
+        public decimal Price { get; set; }
+
+        [DataMember]
+        [XmlElement("Description")]
+        public string Description { get; set; } = string.Empty;
+
+        [DataMember]
+        [XmlElement("Category")]
+        public string Category { get; set; } = string.Empty;
+
+
+        [XmlElement("CreateDate")]
+        public DateTime CreateDate { get; set; } = DateTime.UtcNow;
+
+
+        [DataMember]
+        [XmlElement("otherDescription")]
+        public string otherDescription { get; set; } = string.Empty;
+
+    }
+}

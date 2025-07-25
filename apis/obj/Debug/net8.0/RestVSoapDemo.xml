@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RestVSoapDemo</name>
+    </assembly>
+    <members>
+        <member name="T:RestVSoapDemo.Soap.IProductSoapService">
+            <summary>
+            SOAP service interface for product operations.
+            </summary>
+        </member>
+        <member name="T:RestVSoapDemo.Soap.SoapResponse">
+            <summary>
+            SOAP response model for product operations.
+            </summary>
+        </member>
+        <member name="T:RestVSoapDemo.Soap.ProductSoapService">
+            <summary>
+            SOAP service implementation for product operations.
+              </summary>
+        </member>
+    </members>
+</doc>
